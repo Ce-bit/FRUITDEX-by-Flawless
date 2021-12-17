@@ -17,7 +17,7 @@
         android:label="FRUITDEX"
         android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
-        android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+        android:theme="@style/SplashTheme">
         <activity android:name=".DetectorActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

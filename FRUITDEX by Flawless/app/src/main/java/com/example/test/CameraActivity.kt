@@ -100,6 +100,7 @@ abstract class CameraActivity : Activity(), ImageReader.OnImageAvailableListener
     @RequiresApi(Build.VERSION_CODES.LOLLIPOP)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setTheme(R.style.Maintheme)
         setContentView(R.layout.activity_main)
 
         imageView = findViewById(R.id.myImageView)
