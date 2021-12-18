@@ -29,13 +29,13 @@ public class CatalougeActivity extends AppCompatActivity {
         String[] name = {"Akee","Almond","Avocado","Banana","Barbadine","Breadfruit","Cantaloupe","Carillie","Cashew","Chalta","Chatigne","Chenet","Chinese Tamarind",
                          "Christophene","Coca","Custard Apple", "Fat Pork","Governor Plum", "Grapefruit","Guava","Jackfruit","Lime","Lychee","Mandarin","Mango","Miracle Fruit",
                          "Noni","PawPaw","Peewah","Pommecythere","Pommerac","Star Fruit"};
-        String[] lastMessage = {"Prunus amygdalus","Prunus amygdalus","Lauraceae","Passiflora","Passiflora","Moraceae","Cucurbitaceae","Cucurbitaceae","Anacardium Occidentale","Dillenia","Moraceae","Sapindaceae","Rubiaceae",
+        String[] family = {"Prunus amygdalus","Prunus amygdalus","Lauraceae","Passiflora","Passiflora","Moraceae","Cucurbitaceae","Cucurbitaceae","Anacardium Occidentale","Dillenia","Moraceae","Sapindaceae","Rubiaceae",
                 "Guord","Erythroxylaceae","Annonaceae", "Chrysobalanaceae","Governor Plum", "Salicaceaet","Psidium guajava","Mulberry","Rutaceae","Soapberry","Rutaceae","Anacardiaceae","Sapotaceae",
                 "Madder","Custard apples","Palm","Pommecythere","Anacardiaceae","Averrhoa carambola"};
-        String[] lastmsgTime = {"Akee","Almond","Avocado","Banana","Barbadine","Breadfruit","Cantaloupe","Carillie","Cashew","Chalta","Chatigne","Chenet","Chinese Tamarind",
+        String[] region = {"Akee","Almond","Avocado","Banana","Barbadine","Breadfruit","Cantaloupe","Carillie","Cashew","Chalta","Chatigne","Chenet","Chinese Tamarind",
                 "Christophene","Coca","Custard Apple", "Fat Pork","Governor Plum", "Grapefruit","Guava","Jackfruit","Lime","Lychee","Mandarin","Mango","Miracle Fruit",
                 "Noni","PawPaw","Peewah","Pommecythere","Pommerac","Star Fruit"};
-        String[] phoneNo = {"ankye, achee, akee, ackee apple",
+        String[] otherNames = {"ankye, achee, akee, ackee apple",
                             "tropical almond, beach almond",
                             "Zaboca",
                             "cooking fig, chiquito or soucrier or sikiye fig, Gros Michel, moko, plantain, silk fig, and more.",
@@ -67,7 +67,7 @@ public class CatalougeActivity extends AppCompatActivity {
                             "No other names",
                             "pommerac, Jamaican apple, Otaheite apple, Malay rose apple, mountain apple",
                             "Five Finger, Cosmic Fruit, Patrick"};
-        String[] country = {"The ackee, also known as ankye, achee, akee, ackee apple or ayee is a fruit of the Sapindaceae family, as are the lychee and the longan. It is native to tropical West Africa.",
+        String[] description = {"The ackee, also known as ankye, achee, akee, ackee apple or ayee is a fruit of the Sapindaceae family, as are the lychee and the longan. It is native to tropical West Africa.",
                             "The fruit of the almond is a drupe, consisting of an outer hull and a hard shell with the seed, which is not a true nut, inside. Shelling almonds refers to removing the shell to reveal the seed. Names: tropical almond, beach almond.",
                             "The is botanically a large berry containing a single large seed and buttery flesh. Names: Zaboca ",
                             "A banana is an elongated, edible fruit – botanically a berry – produced by several kinds of large herbaceous flowering plants in the genus Musa. ",
@@ -104,7 +104,7 @@ public class CatalougeActivity extends AppCompatActivity {
 
         for(int i = 0;i< imageId.length;i++){
 
-            Fruit user = new Fruit(name[i],lastMessage[i],lastmsgTime[i]="Local",phoneNo[i],country[i],imageId[i]);
+            Fruit user = new Fruit(name[i],family[i],region[i]="Local",otherNames[i],description[i],imageId[i]);
             userArrayList.add(user);
         }
 
@@ -119,8 +119,8 @@ public class CatalougeActivity extends AppCompatActivity {
 
                 Intent i = new Intent(CatalougeActivity.this,FruitActivity.class);
                 i.putExtra("name",name[position]);
-                i.putExtra("phone",phoneNo[position]);
-                i.putExtra("country",country[position]);
+                i.putExtra("otherNames",otherNames[position]);
+                i.putExtra("description",description[position]);
                 i.putExtra("imageid",imageId[position]);
                 startActivity(i);
 

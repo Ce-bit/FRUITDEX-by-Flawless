@@ -26,7 +26,7 @@ public class ListAdapter extends ArrayAdapter<Fruit> {
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
 
-        Fruit user = getItem(position);
+        Fruit fruit = getItem(position);
 
         if (convertView == null){
 
@@ -35,14 +35,14 @@ public class ListAdapter extends ArrayAdapter<Fruit> {
         }
 
         ImageView imageView = convertView.findViewById(R.id.fruit_pic);
-        TextView userName = convertView.findViewById(R.id.fruitName);
-        TextView lastMsg = convertView.findViewById(R.id.fruit_family);
-        TextView time = convertView.findViewById(R.id.Species);
+        TextView fruitName = convertView.findViewById(R.id.fruitName);
+        TextView fruitFamily = convertView.findViewById(R.id.fruit_family);
+        TextView region = convertView.findViewById(R.id.Species);
 
-        imageView.setImageResource(user.imageId);
-        userName.setText(user.name);
-        lastMsg.setText(user.lastMessage);
-        time.setText(user.lastMsgTime);
+        imageView.setImageResource(fruit.imageId);
+        fruitName.setText(fruit.name);
+        fruitFamily.setText(fruit.family);
+        region.setText(fruit.region);
 
 
         return convertView;

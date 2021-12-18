@@ -22,13 +22,13 @@ public class FruitActivity extends AppCompatActivity {
         if (intent != null){
 
             String name = intent.getStringExtra("name");
-            String phone = intent.getStringExtra("phone");
-            String country = intent.getStringExtra("country");
+            String otherNames = intent.getStringExtra("otherNames");
+            String description = intent.getStringExtra("description");
             int imageid = intent.getIntExtra("imageid",R.drawable.akee);
 
             binding.nameProfile.setText(name);
-            binding.familyProfile.setText(phone);
-            binding.descriptionProfile.setText(country);
+            binding.familyProfile.setText(otherNames);
+            binding.descriptionProfile.setText(description);
             binding.fruitImage.setImageResource(imageid);
 
 
