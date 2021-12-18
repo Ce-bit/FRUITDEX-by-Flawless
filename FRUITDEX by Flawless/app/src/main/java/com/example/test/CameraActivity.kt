@@ -72,6 +72,7 @@ abstract class CameraActivity : Activity(), ImageReader.OnImageAvailableListener
     var galleryImageView: ImageView? = null
     var flipImageView: ImageView? = null
     var closeImageView: ImageView? = null
+    var  catalougeImageView: ImageView? = null
 
     private val device: Classifier.Device = Classifier.Device.CPU
 
@@ -109,12 +110,20 @@ abstract class CameraActivity : Activity(), ImageReader.OnImageAvailableListener
         galleryImageView = findViewById(R.id.galleryImageView)
         flipImageView = findViewById(R.id.flipImageView)
         closeImageView = findViewById(R.id.closeImageView)
+        catalougeImageView = findViewById(R.id.CatalougeImageView)
 
         galleryImageView!!.setOnClickListener(object : View.OnClickListener {
             override fun onClick(p0: View?) {
                 showImageSelect()
             }
         })
+
+        catalougeImageView!!.setOnClickListener(object : View.OnClickListener {
+            override fun onClick(p0: View?) {
+                showCatalouge()
+            }
+        })
+
 
         flipImageView!!.setOnClickListener(object : View.OnClickListener {
             override fun onClick(p0: View?) {
@@ -219,6 +228,11 @@ abstract class CameraActivity : Activity(), ImageReader.OnImageAvailableListener
                 takeScreenshot()
             }
         })
+    }
+
+    private fun showCatalouge() {
+        val intent = Intent(this, CatalougeActivity::class.java)
+        startActivity(intent)
     }
 
     private fun showImageSelect() {

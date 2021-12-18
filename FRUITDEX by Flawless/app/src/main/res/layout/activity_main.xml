@@ -68,6 +68,20 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
+            android:id="@+id/CatalougeImageView"
+            android:layout_width="127dp"
+            android:layout_height="79dp"
+            android:layout_margin="18dp"
+            android:background="@drawable/ic_catalouge"
+            android:elevation="1dp"
+            android:padding="11dp"
+            app:layout_constraintBottom_toBottomOf="@+id/flipImageView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/flipImageView" />
+
+
+        <ImageView
             android:id="@+id/closeImageView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -77,8 +91,9 @@
             android:padding="11dp"
             android:src="@drawable/ic_close"
             android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@+id/list_view"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"  />
+            app:layout_constraintTop_toBottomOf="@+id/flipImageView" />
 
         <ListView
             android:id="@+id/list_view"
