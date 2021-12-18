@@ -221,6 +221,7 @@ class DetectorActivity : CameraActivity(), ImageReader.OnImageAvailableListener 
         return R.layout.tfe_od_camera_connection_fragment_tracking
     }
 
+    @RequiresApi(Build.VERSION_CODES.LOLLIPOP)
     override fun getDesiredPreviewFrameSize(): Size {
         return DESIRED_PREVIEW_SIZE
     }

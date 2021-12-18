@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1006361006235",
+    "project_id": "fruitdex",
+    "storage_bucket": "fruitdex.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1006361006235:android:11a3841f3b8100a8c2f63e",
+        "android_client_info": {
+          "package_name": "com.example.test"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1006361006235-9fgh162maoeili1g8krrbueqvn71vjl2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9Ee2pqQoY47UpzZedn-SEbcUWtK88KLk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1006361006235-9fgh162maoeili1g8krrbueqvn71vjl2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
