@@ -28,10 +28,26 @@
 
         <FrameLayout
             android:id="@+id/container"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            app:layout_anchorGravity="center">
+            android:layout_width="417dp"
+            android:layout_height="650dp"
+            app:layout_anchorGravity="center"
+            app:layout_constraintBottom_toTopOf="@+id/list_view">
 
+            <ImageView
+                android:id="@+id/allWhite"
+                android:layout_width="519dp"
+                android:layout_height="776dp"
+                android:background="@android:color/black"
+                android:contentDescription="TODO"
+                android:scaleType="centerCrop"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/myImageView"
+                android:layout_width="match_parent"
+                android:layout_height="445dp"
+                android:contentDescription="TODO"
+                android:scaleType="centerCrop" />
         </FrameLayout>
 
         <ImageView
@@ -113,26 +129,6 @@
             app:layout_constraintStart_toStartOf="parent"
             tools:context=".CameraActivity" />
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <ImageView
-        android:id="@+id/allWhite"
-        android:layout_width="519dp"
-        android:layout_height="776dp"
-        android:background="@android:color/black"
-        android:contentDescription="TODO"
-        android:scaleType="centerCrop"
-        android:visibility="invisible"
-        app:layout_anchor="@+id/relativeLayout"
-        app:layout_anchorGravity="center" />
-
-    <ImageView
-        android:id="@+id/myImageView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:contentDescription="TODO"
-        android:scaleType="centerCrop"
-        app:layout_anchor="@+id/relativeLayout"
-        app:layout_anchorGravity="center" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
