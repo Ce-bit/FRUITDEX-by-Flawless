@@ -13,3 +13,6 @@ classifications. It allows the user to choose between a floating point or
 model, select the thread count, and decide whether to run on CPU, GPU, or via
 [NNAPI](https://developer.android.com/ndk/guides/neuralnetworks).
 
+## How to Install
+Download APK Here: https://www.dropbox.com/s/bb439cywzt2rc3t/FRUITDEX%20v1.0.apk?dl=0
+Install on mobile device
